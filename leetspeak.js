@@ -19,4 +19,5 @@ function leetspeak(text) {
     }
     return newText
 }
+
 console.log(leetspeak(str));
