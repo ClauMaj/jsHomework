@@ -11,7 +11,7 @@ function leetspeak(text) {
         s: 5,
         t: 7};
         let newText = "";
-    for (char of text) {
+    for (let char of text) {
         if (Object.keys(leet).includes(char.toLowerCase())) {
             char = leet[char].toString();
         }

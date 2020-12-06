@@ -1,6 +1,6 @@
 
 function printSquare(n) {
-    var i = n;
+    let i = n;
     while (i>0) {
         console.log("*".repeat(n));
         i--;

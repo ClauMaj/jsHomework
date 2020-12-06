@@ -7,13 +7,13 @@ var levelOfService = "fair";
 function tipAmount(bill,service){
     switch (service) {
         case "good":
-            var n = 20;
+            let n = 20;
             break;
         case "fair":
-            var n = 15;
+            let n = 15;
             break;
         case "bad":
-            var n= 10;
+            let n= 10;
             break;
     }
     var tip = bill*n/100;
