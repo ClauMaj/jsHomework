@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #calc{
+        display: flex;
+        width: 350px;
+        height: 400px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: top;
+        padding: 3px;
+        flex-wrap: wrap;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #A9A9A9;
+    }
+    #display{
+        width: 98%;
+        background-color: #A9A9A9;
+        height: 16%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .buttonOrange{
+        width: 24%;
+        height: 16%;
+        background-color:#FFA500;
+        margin: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .buttonGray {
+        width: 24%;
+        height: 16%;
+        background-color: #D3D3D3;
+        margin: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .zeroButton{
+        width: 48.5%;
+        height: 16%;
+        background-color: #D3D3D3;
+        margin: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    p{
+        font-size: 35px;
+        font-weight: bold;
+        color: rgb(68, 67, 67)
+    }
+    #dispplayText{
+        padding:0px 10px 0px 10px;
+        color: white;
+    }
+</style>
+<body>
+    <div id="calc">
+        <div id='display'>
+            <p id="dispplayText">0</p>
+        </div>
+        <button class ='buttonOrange'>
+            <p>AC</p>
+        </button>
+        <button class ='buttonOrange'>
+            <p>+/-</p>
+        </button>
+        <button class ='buttonOrange'>
+            <p>%</p>
+        </button>
+        <button class ='buttonOrange'>
+            <p>/</p>
+        </button>
+        <!-- second row -->
+        <button class ='buttonGray'>
+            <p>7</p>
+        </button>
+        <button class ='buttonGray'>
+            <p>8</p>
+        </button>
+        <button class ='buttonGray'>
+            <p>9</p>
+        </button>
+        <button class ='buttonOrange'>
+            <p>X</p>
+        </button>
+        <!-- third row -->
+        <button class ='buttonGray'>
+            <p>4</p>
+        </button>
+        <button class ='buttonGray'>
+            <p>5</p>
+        </button>
+        <button class ='buttonGray'>
+            <p>6</p>
+        </button>
+        <button class ='buttonOrange'>
+            <p>-</p>
+        </button>
+        <!-- fourth row -->
+        <button class ='buttonGray'>
+            <p>1</p>
+        </button>
+        <button class ='buttonGray'>
+            <p>2</p>
+        </button>
+        <button class ='buttonGray'>
+            <p>3</p>
+        </button>
+        <button class ='buttonOrange'>
+            <p>+</p>
+        </button>
+        <!-- fifth row -->
+        <button class ='zeroButton'>
+            <p>0</p>
+        </button>
+        <button class ='buttonGray'>
+            <p>.</p>
+        </button>
+        <button class ='buttonOrange'>
+            <p>=</p>
+        </button>
+    </button>
+    <script src='js/calculator.js'></script>
+</body>
+</html>

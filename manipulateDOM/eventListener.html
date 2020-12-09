@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: yellow;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            margin-top: 50px;
+        }
+        p{
+            background-color: pink;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    Hello World
+    <button onclick="alert('hell')">Click Me</button>
+<div onmouseover="greeting()">
+    Hello
+</div>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quidem, atque voluptates tenetur dolore, magni fugiat odit quia nesciunt temporibus laborum ad maxime, exercitationem iure amet vitae illum assumenda numquam?
+</p>
+<script>
+    
+            const greeting = () =>{
+                console.log('Hello there');
+            }
+
+        // retrieve element out of DOM
+        var p = document.querySelector('p');
+        p.onclick = () => {
+            p.setAttribute('style','background-color: orange; padding: 5px;')
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

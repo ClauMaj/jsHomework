@@ -42,8 +42,11 @@ var cities = [
 { name: 'Detroit', temperature: 48.0 },
 { name: 'New York', temperature: 80.0 } ];
 
-var cooler = cities.filter(function(obj){
-    return obj.temperature < 70;
+var cooler = [] 
+cities.filter(function(obj){
+    if (obj.temperature < 70){
+        cooler.push(obj.name);
+    };
 });
 
 console.log("Cooler");
@@ -110,7 +113,7 @@ console.log(arrArr);
 
 //Given this function:
 //Use the call3Times function to print "Hello, world!" 3 times.
-var fun = function printHello(){
+function fun(){
     console.log('Hello, world!');
 };
 function call3Times(fun) { 
@@ -125,7 +128,7 @@ call3Times(fun);
 //n times
 //You will write a function callNTimes that takes two arguments: times as a number, and fun as a function. It will call that function for that many times
 
-function callNTimes(fun, n){
+var callNTimes = (fun, n) => {
     for (let i=0 ; i<n ; i++){
         fun();
     };
