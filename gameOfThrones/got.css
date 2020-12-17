@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    background-color: #304292;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#head{
+    height: 10vh;
+    width: 100%;
+    background-color: #3a0ca3;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    border: 3px solid black;
+}
+.main{
+    background-color: #510086;
+    width: 50%;
+    height: 100vh;
+    padding: 0px 0px 20px 0px;
+    margin:  0px 0px 20px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+li {
+    background-color: #510086; 
+    font-size: 1.1vw;
+    font-weight: bold;
+    padding-left: 25px;
+    color: rgb(145, 143, 143);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: row;
+    position: relative;
+    border: 1px black solid;
+    cursor: pointer;
+}
+
+img{
+    height: 150px;
+    width: auto;
+    margin-top: 10px;
+    opacity: 70%;
+}
+#topoftable{
+    background-color: #6d6d6d;
+    width: 50%;
+    color: rgb(189, 189, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-weight: bold;
+    margin:  30px 0px 0px 0px;
+    
+}
+.tabletop{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 0px 3px 0px;
+    font-size: 1.2vw;
+}
+
+li:nth-child(odd) {
+    background-color: #00526b;
+}
+p{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 3px 0px 3px 0px;
+}
+ul {
+    counter-reset: list-number;
+}
+li:before {
+    counter-increment: list-number;
+    content: counter(list-number);
+    width: 1.3vw;
+    height: 1.3vw;
+    font-size:  1.1vw;
+    background-color:#00526b;
+    color:rgb(151, 151, 151);
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -61px;
+}
+table
