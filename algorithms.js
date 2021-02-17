@@ -3,21 +3,21 @@
 const exampleArray = [1,2,[3,4, [5,6,7], 8], 9, 10]
 // flatten(exampleArray) //[1,2,3,4,5,6,7,8,9,10]
 
-var tempArray = [];
-var tempIndex = 0;
-function flatten(exampleArray){
-    exampleArray.forEach(function(item,index){
-        if (Array.isArray(item))  {
-                flatten(item);
-        }
-        else {
-            tempArray[tempIndex] = item;
-            tempIndex +=1;
-        }
-    });
-    return tempArray;
-};
-console.log(flatten(exampleArray));
+// var tempArray = [];
+// var tempIndex = 0;
+// function flatten(exampleArray){
+//     exampleArray.forEach(function(item,index){
+//         if (Array.isArray(item))  {
+//                 flatten(item);
+//         }
+//         else {
+//             tempArray[tempIndex] = item;
+//             tempIndex +=1;
+//         }
+//     });
+//     return tempArray;
+// };
+// console.log(flatten(exampleArray));
 
 // Algorithm Challenge 2 
 // Product Sum 
@@ -29,3 +29,36 @@ console.log(flatten(exampleArray));
 // array = [5, 2, [7, -1], 3, [6, [-13, 8], 4]]
 // Sample Output
 // 12 // calculated as: 5 + 2 + 2 * (7 - 1) + 3 + 2 * (6 + 3 * (-13 + 8) + 4)
+
+// Given an array nums. We define a running sum of an 
+// array as runningSum[i] = sum(nums[0]…nums[i]).
+// Return the running sum of nums.
+// Example 1
+// Input: nums = [1,2,3,4]
+// Output: [1,3,6,10]
+// Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
+
+
+
+
+let nums = [1,2,3,4];
+
+
+const runingSum = (arr) => {
+    let track = 0;
+    let newArr = [];
+    arr.forEach( el => {
+        track += el;
+        newArr.push(track)
+    })
+    return newArr;
+}
+
+console.log(runingSum);
+
+
+
+// Example 2
+// Input: nums = [1,1,1,1,1]
+// Output: [1,2,3,4,5]
+// Explanation: Running sum is obtained as follows: [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1].
