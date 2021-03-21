@@ -10,19 +10,19 @@ const companies = [
     { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
 ];
 
-// use forEach to print only name start end
-companies.forEach(function(item){
+// use forEach to print only name start end (a for loop, does not modify original)
+companies.forEach(function (item) {
     console.log(item.name, item.start, item.end);
 });
 
-// new array with just names use map
-var cNames = companies.map(function(item){
+// new array with just names use map (return new array - not modify original)
+var cNames = companies.map(function (item) {
     return item['name'];
 });
 console.log(cNames);
 
 // new array to show star > 1990 use filter
-var filter90 = companies.filter(function(item){
+var filter90 = companies.filter(function (item) {
     return item['start'] > 1990;
 });
 console.log(filter90);
@@ -31,7 +31,7 @@ console.log(filter90);
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-var reduce = ages.reduce(function(accumulator,currentVal){
+var reduce = ages.reduce(function (accumulator, currentVal) {
     return accumulator + currentVal;
 })
 
