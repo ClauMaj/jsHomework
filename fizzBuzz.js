@@ -23,3 +23,14 @@ for (let i = 1; i < 100; i++) {
     }
     console.log(output);
 }
+
+const fizzBuzz = (n) => {
+    let newArr = [];
+    for (let i = 1; i <= n; i++) {
+        let output = "";
+        if (i % 3 === 0) output += "Fizz";
+        if (i % 5 === 0) output += "Buzz";
+        newArr.push(output || i.toString())
+    }
+    return newArr;
+};
